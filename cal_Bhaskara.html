@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Bhaskara</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            font: normal 18pt arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Bem vindo a calculadora Bhaskara!</h1>
+    <hr>
+    <img src="imagens/bhaskara fundo transparente-300.jpg" alt="calculadora">
+    <p><strong>Site em desenvolvimento, logo estará completo!&#x1F60E;</strong></p>
+    <hr>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        var a = Number(window.prompt('Digite o valor da variavel a'))
+        var b = Number(window.prompt('Digite o valor da variavel b'))
+        var c = Number(window.prompt('Digite o valor da variavel c'))
+        var delta =  (b**2)-(4*a*c)
+        var x_delta_positivo = (-(b) + ((delta)*1/2))/2*(a)
+        var x_delta_negativo = (-(b) - ((delta)*1/2))/2*(a)
+        document.writeln(`Olá <strong>${nome}</strong>!<br/>`)
+        document.write('Sabemos que uma Equação de segundo grau em seu formato literal é:<br/> ax² + bx + c = 0.<br/>')
+        document.write(`Sua fórmula montada fica: <br/>${a}x² + ${b}x + ${c} = 0 <br/>`)
+        document.write('Separando Delta da equação temos: <br/> delta = b² - 4.a.c<br/>')
+        document.write(`Jogando os valores das variáveis a, b, e c temos:<br> Delta = ${b}² - 4 . ${a} . ${c}<br/>`)
+        document.write(`Delta tem valor = ${delta}<br/>`)
+        document.write('Os valores de x são: <br/>')
+        document.write(` +x = ${x_delta_positivo}<br/>`)
+        document.write(` -x = ${x_delta_negativo}`)
+    </script>
+</body> 
+</html>
+
+ 
